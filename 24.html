@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>自我介紹</title>
+<meta charset="utf-8">
+<link rel="preload" as="image" href="IMG_0283.jpg">
+<style>
+    #container{height: 1000px;border: 3px solid blue;background-color:#ffd900bb}
+    
+
+    
+    h1.font{font-family: "Times New Roman";}
+    
+    #photo1{border:solid 5px red; border-radius: 40px 40px;}
+    h4#text1{font-weight: bolder; text-decoration: underline;}
+    h2#text1{ background-color:rgb(51, 255, 0); color:blue;text-align:center; border-style:inset;}
+    #BorderBox{border-top:10px black double;
+      border-right:10px black double;
+      border-left:10px black double;
+      border-bottom:10px black double;
+      padding:30px;
+      text-align: center;
+      background-color:green;
+}
+
+</style>
+
+</head>
+<body>
+<div id="container">
+    <table border="3" align="center">
+<caption><h1 style="color:blue;text-align: center;">自我介紹</h1></caption>
+<tr>
+<td rowspan="3"><img src="IMG_0380.JPG" alt="照片" width="250" height="350"></td>
+<td><h1 style="text-align:center">黃宏益</h1></td>
+</tr>
+<tr><td><h3 style="text-align: center;">來自雲林縣斗六市</h3></td></tr>
+<tr><td><h3 style="text-align: center;">雲林國小<br>斗六國中<br>斗六家商</h3></td></tr>
+<tr><td colspan="2"><h2>擅長:APPInventor、文書處理</h2></td></tr>
+<tr><td colspan="2"><h4 id="text1">興趣:玩遊戲、看動漫、看漫畫、打球</h4>   </td></tr>
+<tr>
+<td colspan="2">   
+<div id="BorderBox"><h2 id="text1">聯絡方式<br></h2>
+<a href="https://line.me/ti/p/aITRQDGrSg" ><img src="line.png" style="border:double 5px red" data-on-hover="IMG_0283.jpg"alt="line"width="70" height="70" id="image"></a>
+<a href="https://www.facebook.com/profile.php?id=100004081955290" ><img id="photo1" src="facebook.jfif" alt="照片" width="70" height="70"></a></h2>
+  </dvi></td>
+</table>
+<script>
+const element = document.getElementById("image");
+let previousImageUrl = null;
+element.addEventListener("mouseenter", () => {
+  previousImageUrl = element.src;
+  element.src = element.dataset.onHover;
+});
+
+element.addEventListener("mouseleave", () => {
+  element.src = previousImageUrl;
+  previousImageUrl = null;
+});
+
+</script>
+</body>
+</html>
+
+
+
+
+
+
